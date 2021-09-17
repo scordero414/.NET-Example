@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\scord\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\scord\\.nuget\\packages"
+    ]
+  }
+}
