@@ -1,12 +1,28 @@
 ﻿@page "/"
+@using Proy1.Client.Pages.Components
+@inject IServiceMovie movie
+<div class="jumbotron">
+    <MovieComponent Movies="Movies"/>
+</div>
 
-<h1>Hello, world!</h1>
+@code {
+    private List<Movie> Movies;
+        protected override void OnInitialized(){
+            Movies = movie.GetMovies();
+        }
+}
+
+
+
+@* @page "/"
+
+<h1>Hello, world!</h1> *@
 
 @* <div class="input-group mb-3">
     <input type="text" class="form-control" placeholder="Película" aria-label="Username">
     </div> *@
 
-<form>
+@* <form>
     <div class="form-group">
         <label for="pelicula">Película</label>
         <input type="text" class="form-control" id="pelicula">
@@ -26,4 +42,4 @@
     public string sinopsis = "Una película de locoos.";
     public string function_convert_mayus(string value) => value.ToUpper();
     public string function_convert_minus(string value) => value.ToLower(); 
-}
+} *@

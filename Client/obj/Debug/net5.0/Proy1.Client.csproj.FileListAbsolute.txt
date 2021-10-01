@@ -634,3 +634,15 @@ C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Proy1.Client.csproj.Copy
 C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Proy1.Client.dll
 C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\ref\Proy1.Client.dll
 C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Proy1.Client.pdb
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\ActividadVI.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\FishesListComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\ActividadVI.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\FishesListComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\CardsComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\CardsComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\ListGroupComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\ListGroupComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\DelayComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\DelayComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Components\MovieComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\Components\MovieComponent.razor.g.cs

@@ -84,6 +84,13 @@ using Proy1.Client.Shared;
 #nullable disable
 #nullable restore
 #line 11 "C:\ProyEnfasisProfesional\Proy1\Client\_Imports.razor"
+using Proy1.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\ProyEnfasisProfesional\Proy1\Client\_Imports.razor"
 using Proy1.Shared.Entity;
 
 #line default
@@ -97,7 +104,7 @@ using Proy1.Shared.Entity;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 46 "C:\ProyEnfasisProfesional\Proy1\Client\Shared\NavMenu.razor"
+#line 35 "C:\ProyEnfasisProfesional\Proy1\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

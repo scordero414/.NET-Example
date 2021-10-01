@@ -84,14 +84,14 @@ using Proy1.Client.Shared;
 #nullable disable
 #nullable restore
 #line 11 "C:\ProyEnfasisProfesional\Proy1\Client\_Imports.razor"
-using Proy1.Shared.Entity;
+using Proy1.Client.Services;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\FetchData.razor"
-using Proy1.Shared;
+#line 12 "C:\ProyEnfasisProfesional\Proy1\Client\_Imports.razor"
+using Proy1.Shared.Entity;
 
 #line default
 #line hidden
@@ -104,21 +104,6 @@ using Proy1.Shared;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 38 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\FetchData.razor"
-       
-    private WeatherForecast[] forecasts;
-
-    protected override async Task OnInitializedAsync()
-    {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("WeatherForecast");
-    }
-
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -84,6 +84,13 @@ using Proy1.Client.Shared;
 #nullable disable
 #nullable restore
 #line 11 "C:\ProyEnfasisProfesional\Proy1\Client\_Imports.razor"
+using Proy1.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\ProyEnfasisProfesional\Proy1\Client\_Imports.razor"
 using Proy1.Shared.Entity;
 
 #line default

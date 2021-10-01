@@ -84,7 +84,21 @@ using Proy1.Client.Shared;
 #nullable disable
 #nullable restore
 #line 11 "C:\ProyEnfasisProfesional\Proy1\Client\_Imports.razor"
+using Proy1.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\ProyEnfasisProfesional\Proy1\Client\_Imports.razor"
 using Proy1.Shared.Entity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Index.razor"
+using Proy1.Client.Pages.Components;
 
 #line default
 #line hidden
@@ -98,16 +112,17 @@ using Proy1.Shared.Entity;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 24 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Index.razor"
-      
-    public string movie = "Spiderman";
-    public string sinopsis = "Una película de locoos.";
-    public string function_convert_mayus(string value) => value.ToUpper();
-    public string function_convert_minus(string value) => value.ToLower(); 
+#line 8 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Index.razor"
+       
+    private List<Movie> Movies;
+        protected override void OnInitialized(){
+            Movies = movie.GetMovies();
+        }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IServiceMovie movie { get; set; }
     }
 }
 #pragma warning restore 1591
