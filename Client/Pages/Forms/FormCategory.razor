@@ -1,0 +1,19 @@
+<EditForm Model="Category" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationValidator></DataAnnotationValidator>
+    <div class="row">
+        <div class="col">
+            <InputText class="form-control" @bind-Value=@Category.Name></InputText>
+            <ValidationMessage For="@(()=> Category.Name)"></ValidationMessage>
+        </div>
+    </div>
+    <div class="my-4">
+        <button type="submit" class="btn btn-info">Aceptar</button>
+    </div>
+</EditForm>
+
+@code {
+    //protected override void OnInitialized() { }
+    [Parameter] public Category Category { get; set; }
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+
+}

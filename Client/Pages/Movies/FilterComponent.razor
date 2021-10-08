@@ -1,0 +1,42 @@
+@page "/movies"
+@using Proy1.Client.Pages.Components
+@inject IServiceMovie movie
+
+<div class="jumbotron">
+        <div class="row">
+            <div class="col col-sm-8">
+                <input type="text" name="movie_name" id="movie_name"  @bind-Value="movie_name" @bind-Value:event="oninput"
+                    placeholder="Escribir nombre película" class="form-control"
+                    @onkeypress="@((KeyboardEventArgs e) => SearchMovie(e))">
+            </div>
+            <div class="col col-sm-2 ">
+                <button type="button" class="btn btn-success" @onclick="ListMovie">Buscar</button>
+            </div>
+            <div class="col col-sm-2 ">
+                <button type="button" class="btn btn-danger" @onclick="ClearInputs">Cancelar</button>
+            </div>
+        </div>
+</div>
+<MovieComponent Movies=Movies />
+@code {
+    private List <Movie> Movies;
+    string movie_name = "";
+    protected override void OnInitialized(){
+        Movies = movie.GetMovies();
+    }
+
+    private void SearchMovie (KeyboardEventArgs e) {
+        if(e.Key == "Enter"){
+            ListMovie();
+        }
+    }
+
+    private void ListMovie(){
+        Movies = movie.GetMovies().Where(x=>x.Name.ToLower().Contains(movie_name.ToLower())).ToList();
+    }
+
+    private void ClearInputs(){
+        Movies = movie.GetMovies();
+        movie_name = "";
+    }
+}

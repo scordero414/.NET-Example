@@ -96,6 +96,13 @@ using Proy1.Shared.Entity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Counter.razor"
+using Proy1.Client.Pages.Components;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -105,18 +112,17 @@ using Proy1.Shared.Entity;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 5 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Counter.razor"
+#line 9 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Counter.razor"
        
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
+    private List<Actor> Actors;
+        protected override void OnInitialized(){
+            Actors = actor.GetActors();
+        }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IServiceActor actor { get; set; }
     }
 }
 #pragma warning restore 1591

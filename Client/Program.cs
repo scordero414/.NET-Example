@@ -21,12 +21,17 @@ namespace Proy1.Client
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             ConfigureS(builder.Services);
+            ConfigureA(builder.Services);
 
             await builder.Build().RunAsync();
         }
 
         private static void ConfigureS(IServiceCollection services){
             services.AddSingleton<IServiceMovie, ServiceMovie>();
+        }
+
+        private static void ConfigureA(IServiceCollection services){
+            services.AddSingleton<IServiceActor, ServiceActor>();
         }
     }
 }

@@ -646,3 +646,15 @@ C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\D
 C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\DelayComponent.razor.g.cs
 C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Components\MovieComponent.razor.g.cs
 C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\Components\MovieComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Components\ActorComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\Components\ActorComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Forms\FormCategory.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Categories\CreateCategory.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\Categories\CreateCategory.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\Forms\FormCategory.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Categories\EditCategory.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\Categories\EditCategory.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Categories\ListCategory.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\Categories\ListCategory.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Movies\FilterComponent.razor.g.cs
+C:\ProyEnfasisProfesional\Proy1\Client\obj\Debug\net5.0\Razor\Pages\Movies\FilterComponent.razor.g.cs

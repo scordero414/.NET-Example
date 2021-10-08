@@ -1,12 +1,15 @@
 @page "/counter"
 
-<ListGroupComponent/>
+@using Proy1.Client.Pages.Components
+@inject IServiceActor actor
+<div class="jumbotron">
+    <ActorComponent Actors="Actors"/>
+</div>
 
 @code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
+    private List<Actor> Actors;
+        protected override void OnInitialized(){
+            Actors = actor.GetActors();
+        }
 }
+
