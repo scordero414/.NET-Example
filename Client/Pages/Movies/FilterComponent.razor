@@ -5,7 +5,7 @@
 <div class="jumbotron">
         <div class="row">
             <div class="col col-sm-8">
-                <input type="text" name="movie_name" id="movie_name"  @bind-Value="movie_name" @bind-Value:event="oninput"
+                <input type="text" name="movie_name" id="movie_name"  @bind="movie_name" @bind:event="oninput"
                     placeholder="Escribir nombre película" class="form-control"
                     @onkeypress="@((KeyboardEventArgs e) => SearchMovie(e))">
             </div>

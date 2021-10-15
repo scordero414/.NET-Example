@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bPthkLTwVR2UhBmdvv5yefYUpTR+ERkn1nGCPibjIoHU/s/Y2RO60+bGhF20Fu9tnsB46Ql7fsyZzVB6GOQ20w==",
+  "dgSpecHash": "wIVc+55cABaJTXI9Si50kJDBVijy7Tm6pf8egBIgAeRlNFJF7gG6EGoyBJ5IbyHSss4haF3s1Ny4/aK1/83h+A==",
   "success": true,
   "projectFilePath": "C:\\ProyEnfasisProfesional\\Proy1\\Client\\Proy1.Client.csproj",
   "expectedPackageFiles": [
@@ -30,7 +30,7 @@
     "C:\\Users\\scord\\.nuget\\packages\\microsoft.jsinterop.webassembly\\5.0.10\\microsoft.jsinterop.webassembly.5.0.10.nupkg.sha512",
     "C:\\Users\\scord\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\scord\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
-    "C:\\Users\\scord\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.10\\microsoft.netcore.app.runtime.browser-wasm.5.0.10.nupkg.sha512"
+    "C:\\Users\\scord\\.nuget\\packages\\microsoft.netcore.app.runtime.browser-wasm\\5.0.11\\microsoft.netcore.app.runtime.browser-wasm.5.0.11.nupkg.sha512"
   ],
   "logs": []
 }

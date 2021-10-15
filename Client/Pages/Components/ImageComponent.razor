@@ -1,0 +1,42 @@
+<div>
+    <label for="" class="form-label">@Label</label>
+    <InputFile class="form-control" OnChange="OnChange" accept=".png,.jpg,.jpeg,.gif,.jfif" />
+    <div class="mb-3">
+        @if (imageT != null)
+        {
+            <div class="mb-3" style="margin: 10px;">
+                <img src="data:image/jpg;base64,@imageT" height="200px" width="200px" alt="qwe">
+            </div>
+        }
+    </div>
+    @* <div class="mb-3">
+        @if (imageURL != null)
+        {
+        <div class="mb-3" style="margin: 10px;">
+        <img src="data:image/jpg;base64,@imageT" height="200px" width="200px" alt="qwe">
+        </div>
+        }
+        </div> *@
+</div>
+@code {
+    [Parameter] public string Label { get; set; } = "Imagen";
+    [Parameter] public EventCallback<string> ImageSelected { get; set; }
+    [Parameter] public string imageURL { get; set; }
+    public string imageT;
+    public async Task OnChange(InputFileChangeEventArgs e)
+    {
+        var images = e.GetMultipleFiles();
+        foreach (var image in images)
+        {
+            var tamañoImagen = new byte[image.Size];
+            await image.OpenReadStream().ReadAsync(tamañoImagen);
+
+            imageT = Convert.ToBase64String(tamañoImagen);
+            imageURL = null;
+
+            await ImageSelected.InvokeAsync(imageT);
+            StateHasChanged();
+
+        }
+    }
+}

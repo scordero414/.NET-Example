@@ -1,0 +1,11 @@
+@page "/actors/create"
+<div>
+    <ActorsForm Actor="Actor" OnValidSubmit="Create"/>
+
+</div>
+@code {
+    public Actor Actor = new Actor();
+    void Create(){
+        Console.WriteLine(Actor.Name);
+    }    
+}
