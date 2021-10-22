@@ -4,16 +4,19 @@
 
 <div class="jumbotron">
         <div class="row">
-            <div class="col col-sm-8">
+            <div class="col col-sm-7">
                 <input type="text" name="movie_name" id="movie_name"  @bind="movie_name" @bind:event="oninput"
                     placeholder="Escribir nombre película" class="form-control"
                     @onkeypress="@((KeyboardEventArgs e) => SearchMovie(e))">
             </div>
-            <div class="col col-sm-2 ">
+            <div class="col ">
                 <button type="button" class="btn btn-success" @onclick="ListMovie">Buscar</button>
             </div>
-            <div class="col col-sm-2 ">
+            <div class="col ">
                 <button type="button" class="btn btn-danger" @onclick="ClearInputs">Cancelar</button>
+            </div>
+            <div class="col ">
+                <a type="button" class="btn btn-info"  href="movies/create">Crear Película</a>
             </div>
         </div>
 </div>

@@ -96,6 +96,14 @@ using Proy1.Shared.Entity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Actors\EditActor.razor"
+using Proy1.Client.Pages.Forms;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/actors/edit/{Id:int}")]
     public partial class EditActor : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -103,6 +111,32 @@ using Proy1.Shared.Entity;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 7 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Actors\EditActor.razor"
+       
+
+
+    [Parameter] public int Id {get; set;}
+    public Actor Actor;
+
+    protected override void OnInitialized()
+    {
+        Actor = new Actor(){
+            Id = 2,
+            Name = "Dwayne Johnson", 
+            Biography = "Dwayne Douglas Johnson​ es un actor, rapero y luchador profesional estadounidense, conocido popularmente como «La Roca» o «The Rock».​Se desempeñó como luchador profesional para la WWE hasta su retirada oficial en 2019, con el objetivo de centrarse en su carrera artística",
+            BirthDate = DateTime.Today
+        };
+    }
+    
+    void Edit(){
+        
+        Console.WriteLine(Actor.Name);
+    }    
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

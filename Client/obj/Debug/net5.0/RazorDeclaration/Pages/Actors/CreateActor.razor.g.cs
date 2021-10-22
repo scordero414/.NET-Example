@@ -96,6 +96,13 @@ using Proy1.Shared.Entity;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Actors\CreateActor.razor"
+using Proy1.Client.Pages.Forms;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/actors/create")]
     public partial class CreateActor : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -105,7 +112,7 @@ using Proy1.Shared.Entity;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 6 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Actors\CreateActor.razor"
+#line 7 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Actors\CreateActor.razor"
        
     public Actor Actor = new Actor();
     void Create(){

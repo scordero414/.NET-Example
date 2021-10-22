@@ -112,7 +112,7 @@ using Proy1.Client.Pages.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 21 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Movies\FilterComponent.razor"
+#line 24 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Movies\FilterComponent.razor"
        
     private List <Movie> Movies;
     string movie_name = "";

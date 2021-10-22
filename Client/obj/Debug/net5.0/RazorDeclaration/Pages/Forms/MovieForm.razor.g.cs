@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Proy1.Client.Pages.Actors
+namespace Proy1.Client.Pages.Forms
 {
     #line hidden
     using System;
@@ -97,13 +97,13 @@ using Proy1.Shared.Entity;
 #line hidden
 #nullable disable
 #nullable restore
-#line 1 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Actors\ActorsForm.razor"
+#line 1 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Forms\MovieForm.razor"
 using Proy1.Client.Pages.Components;
 
 #line default
 #line hidden
 #nullable disable
-    public partial class ActorsForm : Microsoft.AspNetCore.Components.ComponentBase
+    public partial class MovieForm : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -111,27 +111,26 @@ using Proy1.Client.Pages.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Actors\ActorsForm.razor"
+#line 24 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Forms\MovieForm.razor"
        
-    [Parameter] public Actor Actor { get; set; }
     [Parameter] public EventCallback OnValidSubmit { get; set; }
+    [Parameter] public Movie Movie {get; set;}
+
     public string ImageURL;
+
     protected override void OnInitialized()
     {
-        if (!string.IsNullOrWhiteSpace(Actor.Photo))
+        if (!string.IsNullOrWhiteSpace(Movie.Image))
         {
-            ImageURL = Actor.Photo;
-            Actor.Photo = null;
+            ImageURL = Movie.Image;
+            Movie.Image = null;
         }
     }
-
     private void ImageSelected(string imageBase64)
     {
-        Actor.Photo = imageBase64;
+        Movie.Image = imageBase64;
         ImageURL = null;
     }
-
-
 
 
 #line default

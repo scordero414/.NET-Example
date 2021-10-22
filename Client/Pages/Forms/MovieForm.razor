@@ -1,0 +1,44 @@
+@using Proy1.Client.Pages.Components
+
+<EditForm Model="Movie" OnValidSubmit="OnValidSubmit">
+
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <InputText class="form-control" @bind-Value="@Movie.Name"></InputText>
+    <ValidationMessage For="@(()=>Movie.Name)"></ValidationMessage>
+
+    <InputDate class="form-control" @bind-Value="@Movie.Premier"/>
+    <ValidationMessage For="@(()=>Movie.Premier)"></ValidationMessage>
+
+    <InputNumber class="form-control" @bind-Value="@Movie.Score"></InputNumber>
+    <ValidationMessage For="@(()=>Movie.Score)"></ValidationMessage>
+
+    <InputTextArea class="form-control" @bind-Value="@Movie.Sinopsis"></InputTextArea>
+    <ValidationMessage For="@(()=>Movie.Sinopsis)"></ValidationMessage>
+
+    <ImageComponent Label="Selecciona una foto:" ImageSelected="ImageSelected" ImageURL="@ImageURL"/>
+
+
+
+</EditForm>
+
+@code {
+    [Parameter] public EventCallback OnValidSubmit { get; set; }
+    [Parameter] public Movie Movie {get; set;}
+
+    public string ImageURL;
+
+    protected override void OnInitialized()
+    {
+        if (!string.IsNullOrWhiteSpace(Movie.Image))
+        {
+            ImageURL = Movie.Image;
+            Movie.Image = null;
+        }
+    }
+    private void ImageSelected(string imageBase64)
+    {
+        Movie.Image = imageBase64;
+        ImageURL = null;
+    }
+
+}

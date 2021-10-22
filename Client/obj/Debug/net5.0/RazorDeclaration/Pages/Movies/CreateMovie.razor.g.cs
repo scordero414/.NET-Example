@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Proy1.Client.Pages.Forms
+namespace Proy1.Client.Pages.Movies
 {
     #line hidden
     using System;
@@ -96,7 +96,15 @@ using Proy1.Shared.Entity;
 #line default
 #line hidden
 #nullable disable
-    public partial class FormCategory : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 2 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Movies\CreateMovie.razor"
+using Proy1.Client.Pages.Forms;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/movies/create")]
+    public partial class CreateMovie : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -104,12 +112,17 @@ using Proy1.Shared.Entity;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 14 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Forms\FormCategory.razor"
+#line 10 "C:\ProyEnfasisProfesional\Proy1\Client\Pages\Movies\CreateMovie.razor"
        
-    //protected override void OnInitialized() { }
-    [Parameter] public Category Category { get; set; }
-    [Parameter] public EventCallback OnValidSubmit { get; set; }
+    public Movie Movie = new Movie();
 
+    void Create(){
+        Console.WriteLine($"{Movie.Name}");
+        Console.WriteLine($"{Movie.Sinopsis}");
+        Console.WriteLine($"{Movie.Premier}");
+        Console.WriteLine($"{Movie.Score}");
+        Console.WriteLine($"{Movie.Image}");
+    }
 
 #line default
 #line hidden
